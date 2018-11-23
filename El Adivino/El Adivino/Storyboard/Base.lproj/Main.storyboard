@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="El_Adivino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cielo Azul" translatesAutoresizingMaskIntoConstraints="NO" id="Pd4-XL-Tel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adivino" translatesAutoresizingMaskIntoConstraints="NO" id="Rkx-Sx-QW1">
+                                <rect key="frame" x="87.5" y="30" width="200" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WMa-m3-jOG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta lo que quieras..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ty-93-VDZ">
+                                <rect key="frame" x="77" y="287" width="221" height="24"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypb-wp-SjT">
+                                <rect key="frame" x="145.5" y="611" width="84" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="4xH-pa-A03"/>
+                                    <constraint firstAttribute="height" constant="36" id="74i-6M-m4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Preguntar">
+                                    <color key="titleColor" red="0.44593013069999998" green="0.079516267119999998" blue="0.18527932359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPreguntar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Pz-1X-Ghj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u4-p3-LFY">
+                                <rect key="frame" x="10" y="321" width="355" height="280"/>
+                                <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="20"/>
+                                <color key="textColor" red="0.00095863459699737513" green="0.035038256191258464" blue="0.2094908329172589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pd4-XL-Tel" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0bg-zG-dXM"/>
+                            <constraint firstItem="Ypb-wp-SjT" firstAttribute="top" secondItem="0u4-p3-LFY" secondAttribute="bottom" constant="10" id="3be-3U-OcQ"/>
+                            <constraint firstItem="Rkx-Sx-QW1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="C1N-ku-VoV"/>
+                            <constraint firstItem="Pd4-XL-Tel" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IO7-ud-zQc"/>
+                            <constraint firstItem="3Ty-93-VDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NOh-69-YYg"/>
+                            <constraint firstItem="Rkx-Sx-QW1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nid-y8-2tp"/>
+                            <constraint firstItem="Pd4-XL-Tel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nof-zI-4Y1"/>
+                            <constraint firstItem="Pd4-XL-Tel" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RBV-MF-Iib"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0u4-p3-LFY" secondAttribute="trailing" constant="10" id="TKl-Uh-pTt"/>
+                            <constraint firstItem="0u4-p3-LFY" firstAttribute="top" secondItem="3Ty-93-VDZ" secondAttribute="bottom" constant="10" id="aX8-Q1-Ken"/>
+                            <constraint firstItem="0u4-p3-LFY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="f77-Ao-ka9"/>
+                            <constraint firstItem="Ypb-wp-SjT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0o-ch-3zq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ypb-wp-SjT" secondAttribute="bottom" constant="20" id="uiK-oW-M1o"/>
+                            <constraint firstItem="3Ty-93-VDZ" firstAttribute="top" secondItem="Rkx-Sx-QW1" secondAttribute="bottom" id="xxF-0I-iSx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgLogo" destination="Rkx-Sx-QW1" id="qdR-Uj-7HK"/>
+                        <outlet property="lblRespuesta" destination="0u4-p3-LFY" id="7F2-ym-qQq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Adivino" width="221" height="257"/>
+        <image name="Cielo Azul" width="116.40000152587891" height="73.44000244140625"/>
+    </resources>
+</document>
